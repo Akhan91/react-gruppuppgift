@@ -7,7 +7,7 @@ function NavBar() {
             <ul>
                 <Link to="/create-item">create a new post</Link>
                 <Link to="/manage-items">manage posts</Link>
-                <Link to="/home">home</Link>
+                <Link to="/items">home</Link>
             </ul>
         </nav>
     )
