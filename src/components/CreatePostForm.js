@@ -9,7 +9,7 @@ function CreatePostForm({submit, change, item}) {
             <textarea type="text" className="form-content" placeholder="content" name="content" value={item.content} onChange={change}></textarea>
             <input type="text" className="form-author" placeholder="author" name="author" value={item.author} onChange={change}></input>
             <input type="text" className="form-tags" placeholder="tags (comma-seperated)" name="tags" value={item.tags} onChange={change}></input> <br></br>
-            <button className="button">Submit.</button>
+            <button className="button">submit</button>
         </form>
     </div>
     );

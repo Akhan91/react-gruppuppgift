@@ -74,6 +74,7 @@ form {
 }
 
 .button {
+  font-family: sans-serif;
   width: 410px;
   height: 40px;
   background: var(--orange);

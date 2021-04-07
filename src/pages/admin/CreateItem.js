@@ -19,7 +19,7 @@ function CreateItem() {
     const submit = async (e) => {
         e.preventDefault();
         try {
-            await fetch('http://192.168.1.69:5000/posts', {
+            await fetch('http://localhost:5000/posts', { //http://192.168.1.69:5000/posts - internal ip for macbook
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
