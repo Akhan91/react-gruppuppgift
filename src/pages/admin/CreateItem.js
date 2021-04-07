@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import {Link, useHistory} from "react-router-dom";
 import CreatePostForm from '../../components/CreatePostForm';
 
 function CreateItem() {
     const [item, setItem] = useState({});
+    const history = useHistory();
 
-    const handleChange = (e) => {
+    const change = (e) => {
         const name = e.target.name;
         const value = e.target.value;
 
@@ -14,27 +16,26 @@ function CreateItem() {
         })
     }
 
-    const handleSubmit = async (e) => {
+    const submit = async (e) => {
         e.preventDefault();
         try {
-            await fetch('http://localhost:5000/posts', {
+            await fetch('http://192.168.1.69:5000/posts', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(item)
             });
+            history.push('/manage-puns')
         } catch(error) {
             console.log(error);
         }
     }
-
     return (
         <CreatePostForm 
-            handleSubmit={handleSubmit}
-            handleChange={handleChange}
+            submit={submit}
+            change={change}
             item={item}
-            pageid="create-item"
         />
     );
 }

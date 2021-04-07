@@ -9,6 +9,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  text-align: center;
+}
+
+.header {
+  font-size: 52pt;
+  font-family: sans-serif;
+  color: var(--orange);
+  font-weight: 600;
 }
 
 h2, h1 {
@@ -18,12 +26,15 @@ h2, h1 {
 }
 
 form {
+  display: inline-block;
   width: 750px;
   height: 750px;
-  margin: auto;
+  text-decoration: none;
+  outline: none;
 }
 
 .form-title, .form-author, .form-tags {
+  font-family: sans-serif;
   width: 386px;
   padding: 12px;
   border-radius: 3px;
@@ -39,6 +50,7 @@ form {
 }
 
 .form-content {
+  font-family: sans-serif;
   width: 386px;
   padding: 12px;
   border-radius: 3px;
@@ -52,11 +64,9 @@ form {
   color: white;
   height: 130px;
   font-weight: 600;
-}
-
-textarea {
   text-decoration: none;
   outline: none;
+
 }
 
 ::placeholder {
@@ -74,13 +84,13 @@ textarea {
 }
 
 a {
+  text-align: center;
   text-decoration: none;
   color: var(--white);
 }
 
-.nav, a {
+.nav, a, ul {
+
   font-size: 14pt;
-  padding: 5px;
-  margin-right: 10px;
-  float: right;
+  padding: 10px;
 }
