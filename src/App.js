@@ -14,6 +14,7 @@ function App() {
   return (
     <Router>
     <div className="App">
+        {/* <Items /> */}
         <NavBar />
         <Switch>
           <Route path="/items" exact component={Items} />
