@@ -26,7 +26,7 @@ function CreateItem() {
                 },
                 body: JSON.stringify(item)
             });
-            history.push('/manage-puns')
+            history.push('/manage-items')
         } catch(error) {
             console.log(error);
         }
