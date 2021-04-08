@@ -7,7 +7,7 @@ function NavBar() {
         <div className="header">blog.</div>
         <nav className="nav">
             <ul>
-                <Link to="/items">home.</Link>
+                <Link to="/">home.</Link>
                 <Link to="/manage-items">manage posts.</Link>
                 <Link to="/create-item">create a new post.</Link>
             </ul>

@@ -16,7 +16,7 @@ function App() {
     <div className="App">
         <NavBar />
         <Switch>
-          <Route path="/items" exact component={Items} />
+          <Route path="/" exact component={Items} />
           <Route path="/manage-items" component={ManageItems} />
           <Route path="/update-item/:id" component={UpdateItem} />
           <Route path="/create-item" component={CreateItem} />

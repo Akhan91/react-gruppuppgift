@@ -26,7 +26,7 @@ function CreateItem() {
                 },
                 body: JSON.stringify(item)
             });
-            history.push('/manage-items')
+            history.push('/')
         } catch(error) {
             console.log(error);
         }

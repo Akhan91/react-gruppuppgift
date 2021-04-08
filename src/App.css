@@ -19,6 +19,10 @@ body {
   font-weight: 600;
 }
 
+p {
+  color: var(--white);
+}
+
 h2, h1 {
   color: var(--orange);
   text-align: center;
