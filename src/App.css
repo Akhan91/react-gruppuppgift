@@ -99,3 +99,24 @@ a {
   font-size: 14pt;
   padding: 10px;
 }
+
+
+th, td {
+  border: 1px solid black;
+  margin: 50px;
+  padding: 10px;
+}
+
+table {
+  background: white;
+  margin: auto;
+  width: 50%;
+}
+
+th, tbody{
+  background: darkgrey
+}
+
+.handleButton {
+  margin: 10px;
+}
